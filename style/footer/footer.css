@@ -21,12 +21,9 @@
   }
 }
 
-.footer-menu-links {
+.footer-menu-link {
   color: #FBFCFE;
   z-index: 10;
-}
-.footer-menu-links:hover, .footer-menu-links:focus {
-  opacity: 1;
 }
 
 .footer-social-links-wrapper {
