@@ -7,6 +7,11 @@
   display: flex;
 }
 
+.header-open-mobile-menu-btn {
+  position: relative;
+  z-index: 10;
+}
+
 @media (min-width: 700px) {
   .header-open-mobile-menu-btn,
   .header-close-mobile-menu-btn {
@@ -15,21 +20,21 @@
 }
 
 .header {
-  padding: 40px 24px;
+  padding: 40px 24px 48px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 @media (min-width: 700px) {
   .header {
-    padding: 40px 40px;
+    padding: 40px 40px 48px;
     justify-content: flex-start;
     gap: 64px;
   }
 }
 @media (min-width: 1280px) {
   .header {
-    padding: 40px 165px;
+    padding: 40px 165px 74px;
   }
 }
 
