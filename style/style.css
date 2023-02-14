@@ -24,6 +24,9 @@ body {
   font-family: "DM Serif Display", serif;
   font-weight: 400;
   color: #36536B;
+}
+
+.basic-large-header {
   font-size: 2.13em;
   line-height: 1.125em;
 }
@@ -33,11 +36,13 @@ body {
     line-height: 1.17em;
   }
 }
-@media (min-width: 1280px) {
-  .basic-large-header {
-    font-size: 3.74em;
-    line-height: 1em;
-  }
+
+.basic-text {
+  line-height: 1.87;
+}
+
+.low-opacity-text {
+  opacity: 0.5;
 }
 
 /*LINKS*/
@@ -71,6 +76,7 @@ body {
   font-size: inherit;
   font-family: inherit;
   font-weight: 700;
+  text-decoration: none;
   padding: 16px 27px;
   cursor: pointer;
 }
@@ -91,6 +97,20 @@ body {
   box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
 }
 .basic-pink-btn:active {
+  box-shadow: inset 3px 3px 5px rgba(54, 83, 107, 0.25);
+}
+
+.basic-light-btn {
+  background-color: transparent;
+  color: #FBFCFE;
+  border: 1px solid #FBFCFE;
+}
+.basic-light-btn:hover {
+  background-color: #FFFFFF;
+  color: #1B262F;
+  box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+}
+.basic-light-btn:active {
   box-shadow: inset 3px 3px 5px rgba(54, 83, 107, 0.25);
 }
 
