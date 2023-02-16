@@ -60,9 +60,9 @@
         }
     }
     @media (min-width: 1280px) {
-        margin-bottom: 75px;
+        margin-bottom: 0px;
         & .section-text-wrapper {
-            margin-top: -55px;
+            margin-top: -55px; 
             max-width: 550px;
         }
     }
@@ -75,7 +75,7 @@
     }
 }
 
-.start-section-decor-img {
+.start-section-svg {
     max-width: 205px;
     position: relative;
     left: 50%;
@@ -92,7 +92,6 @@
     }
     @media (min-width: 1280px) {
         max-width: 430px;
-        //right: 7%;
     }
 }
 
@@ -104,9 +103,6 @@
     margin-bottom: 80px;
     @media (min-width: 700px) {
         margin-bottom: 100px;
-    }
-    @media (min-width: 1280px) {
-        margin-bottom: 150px;
     }
 }
 
@@ -181,5 +177,67 @@
 .partners-section-btn {
     @media (min-width: 1280px) {
         align-self: start;
+    }
+}
+
+.easy-implement-section,
+.simple-ui-section {
+    @media (min-width: 1280px) {
+        @include desktop-section-flex-container();
+        flex-direction: row;
+        margin-bottom: 35px;
+        & .section-text-wrapper {
+            @include desktop-section-text-wrapper();
+            margin-top: -28px;
+        }
+    }
+}
+
+.easy-implement-svg,
+.simple-ui-svg {
+    width: 400px;
+    margin-top: -55px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-46%);
+    @media (min-width: 700px) {
+        width: 500px;
+    }
+    @media (min-width: 1280px) {
+        width: 600px;
+        margin-top: 0;
+        left: -55px;
+        transform: unset;
+    }
+}
+
+.easy-implement-section {
+    @media (min-width: 1280px) {
+        justify-content: stretch;
+        gap: 0px;
+    }
+}
+
+.simple-ui-section {
+    @media (min-width: 1280px) {
+        position: relative;
+        flex-direction: row-reverse;
+    }
+}
+
+.simple-ui-svg {
+    @media (min-width: 1280px) {
+        width: 700px;
+        left: 92px;
+    }
+}
+
+.simple-ui-circle {
+    display: none;
+    @media (min-width: 1280px) {
+        display: inline-block;
+        position: absolute;
+        right: -50%;
+        transform: translateY(-5%);
     }
 }
