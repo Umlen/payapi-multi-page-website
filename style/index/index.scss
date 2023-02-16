@@ -12,7 +12,13 @@
     }
 }
 
-@mixin home-page-section {
+.home-page-header {
+    @media (min-width: 1024px) {
+        padding-bottom: 20px;
+    }
+}
+
+.home-page-section {
     max-width: 90%;
     margin: 0 auto 80px;
     @media (min-width: 700px) {
@@ -47,16 +53,16 @@
 }
 
 .start-section {
-    @include home-page-section;
     @media (min-width: 1024px) {
-        @include desktop-section-flex-container;
+        @include desktop-section-flex-container();
         & .section-text-wrapper {
-            @include desktop-section-text-wrapper;
+            @include desktop-section-text-wrapper();
         }
     }
     @media (min-width: 1280px) {
         margin-bottom: 75px;
         & .section-text-wrapper {
+            margin-top: -55px;
             max-width: 550px;
         }
     }
@@ -70,22 +76,23 @@
 }
 
 .start-section-decor-img {
+    max-width: 205px;
     position: relative;
     left: 50%;
+    margin-top: -50px;
     z-index: 10;
-    max-width: 128px;
-    height: auto;
-    transform: translate(-50%, -5%);
+    transform: translateX(-44%);
     @media (min-width: 500px) {
-        max-width: 160px;
+        max-width: 265px;
     }
     @media (min-width: 1024px) {
-        max-width: 263px;
         left: unset;
         transform: unset;
+        margin-top: 0;
     }
     @media (min-width: 1280px) {
-        right: 7%;
+        max-width: 430px;
+        //right: 7%;
     }
 }
 
@@ -120,7 +127,6 @@
 .partners-section {
     position: relative;
     z-index: 10;
-    @include home-page-section;
     padding-top: 80px;
     @media (min-width: 700px) and (max-width: 1279px) {
         & .section-text-wrapper {
@@ -128,10 +134,10 @@
         }
     }
     @media (min-width: 1280px) {
-        @include desktop-section-flex-container;
+        @include desktop-section-flex-container();
         padding-top: 100px;
         & .section-text-wrapper {
-            @include desktop-section-text-wrapper;
+            @include desktop-section-text-wrapper();
         }
     }
 }
