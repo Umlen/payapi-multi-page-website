@@ -122,7 +122,27 @@ body {
     }
 }
 
-/*FORMS*/
+/*READY TO START SECTION*/
+
+.basic-ready-to-start {
+    width: 90%;
+    margin: 0 auto 80px;
+    text-align: center;
+    @media (min-width: 700px) {
+        width: 60%;
+        margin-bottom: 100px;
+    }
+    @media (min-width: 1280px) {
+        width: 77%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+.ready-to-start-header {
+    margin-bottom: 32px;
+}
 
 .basic-schedule-demo-form {
     width: 100%;
@@ -130,16 +150,12 @@ body {
     flex-direction: column;
     gap: 16px;
     @media (min-width: 500px) {
-        padding: 0 30px;
         flex-direction: row;
         gap: 0;
         position: relative;
     }
-    @media (min-width: 700px) {
-        padding: 0 70px;
-    }
-    @media (min-width: 1024px) {
-        padding: 0;
+    @media (min-width: 1280px) {
+        width: 450px;
     }
 }
 
@@ -168,13 +184,7 @@ body {
     @media (min-width: 500px) {
         position: absolute;
         height: 100%;
-        right: 30px;
-        z-index: 10;
-    }
-    @media (min-width: 700px) {
-        right: 70px;
-    }
-    @media (min-width: 1024px) {
         right: 0;
+        z-index: 10;
     }
 }

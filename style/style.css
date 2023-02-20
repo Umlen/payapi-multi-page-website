@@ -121,7 +121,31 @@ body {
   box-shadow: inset 3px 3px 5px rgba(54, 83, 107, 0.25);
 }
 
-/*FORMS*/
+/*READY TO START SECTION*/
+.basic-ready-to-start {
+  width: 90%;
+  margin: 0 auto 80px;
+  text-align: center;
+}
+@media (min-width: 700px) {
+  .basic-ready-to-start {
+    width: 60%;
+    margin-bottom: 100px;
+  }
+}
+@media (min-width: 1280px) {
+  .basic-ready-to-start {
+    width: 77%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.ready-to-start-header {
+  margin-bottom: 32px;
+}
+
 .basic-schedule-demo-form {
   width: 100%;
   display: flex;
@@ -130,20 +154,14 @@ body {
 }
 @media (min-width: 500px) {
   .basic-schedule-demo-form {
-    padding: 0 30px;
     flex-direction: row;
     gap: 0;
     position: relative;
   }
 }
-@media (min-width: 700px) {
+@media (min-width: 1280px) {
   .basic-schedule-demo-form {
-    padding: 0 70px;
-  }
-}
-@media (min-width: 1024px) {
-  .basic-schedule-demo-form {
-    padding: 0;
+    width: 450px;
   }
 }
 
@@ -176,17 +194,7 @@ body {
   .schedule-demo-btn {
     position: absolute;
     height: 100%;
-    right: 30px;
-    z-index: 10;
-  }
-}
-@media (min-width: 700px) {
-  .schedule-demo-btn {
-    right: 70px;
-  }
-}
-@media (min-width: 1024px) {
-  .schedule-demo-btn {
     right: 0;
+    z-index: 10;
   }
 }/*# sourceMappingURL=style.css.map */

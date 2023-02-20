@@ -75,6 +75,15 @@
     }
 }
 
+.start-section-form {
+    @media (min-width: 500px) {
+       width: 77%;
+    }
+    @media (min-width: 1024px) {
+        width: 98%;
+     }
+}
+
 .start-section-svg {
     max-width: 205px;
     position: relative;
