@@ -37,6 +37,13 @@ body {
   }
 }
 
+.basic-smallest-header {
+  font-weight: 700;
+  color: #36536B;
+  font-size: 1.2em;
+  line-height: 1.39em;
+}
+
 .basic-text {
   line-height: 1.87;
 }
