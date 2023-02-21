@@ -1,16 +1,16 @@
-.top-decoration-circle {
+.home-decoration-circle {
   position: absolute;
   top: 0;
   left: 50%;
   transform: translate(-50%, -70%);
 }
 @media (min-width: 700px) {
-  .top-decoration-circle {
+  .home-decoration-circle {
     transform: translate(-50%, -75%) scale(1.25);
   }
 }
 @media (min-width: 1024px) {
-  .top-decoration-circle {
+  .home-decoration-circle {
     left: 100%;
     transform: translate(-82%, -22%);
   }
@@ -70,6 +70,14 @@
   }
 }
 
+.start-section-header {
+  padding: 0;
+}
+@media (min-width: 1024px) {
+  .start-section-header {
+    text-align: left;
+  }
+}
 @media (min-width: 1280px) {
   .start-section-header {
     font-size: 4.8em;
