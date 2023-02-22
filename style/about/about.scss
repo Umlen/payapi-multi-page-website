@@ -1,0 +1,122 @@
+.main-content {
+    padding: 0 24px;
+    @media (min-width: 700px) {
+        padding: 0 40px;
+    }
+    @media (min-width: 1280px) {
+        padding: 0 260px;
+    }
+}
+
+.about-header {
+    margin-bottom: 40px;
+    @media (min-width: 700px) {
+        margin-bottom: 54px;
+    }
+    @media (min-width: 1280px) {
+        margin-bottom: 50px;
+        max-width: 650px;
+    }
+}
+
+.about-description-block {
+    margin-bottom: 48px;
+    text-align: center;
+    @media (min-width: 700px) {
+        margin-bottom: 64px;
+        text-align: left;
+        display: flex;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    @media (min-width: 1280px) {
+        margin-bottom: 56px;
+        gap: 30px;
+    }
+}
+
+.about-description-header {
+    margin-bottom: 16px;
+    @media (min-width: 700px) {
+        margin-bottom: 0;
+        min-width: 223px;
+    }
+    @media (min-width: 1280px) {
+        min-width: 255px;
+    }
+}
+
+.image-block {
+    min-width: 100%;
+    max-width: 100vw;
+    height: 300px;
+    margin: 0 -24px 48px;
+    background-image: url(/assets/about/mobile/image-team-members.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    @media (min-width: 700px) {
+        height: 267px;
+        margin: 0 -40px 64px;
+        background-image: url(/assets/about/tablet/image-team-members.jpg);
+    }
+    @media (min-width: 1280px) {
+        height: 500px;
+        margin: 0 -260px 72px;
+        background-image: url(/assets/about/desktop/image-team-members.jpg);
+        position: relative;
+    }
+}
+
+.image-block-decoration-circle {
+    display: none;
+    @media (min-width: 1280px) {
+        display: block;
+        position: absolute;
+        left: -520px;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: -1;
+    }
+}
+
+.about-info-container {
+    padding: 16px 0;
+    margin-bottom: 48px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 32px;
+    border-top: 1px solid rgba(54, 83, 107, .25);
+    border-bottom: 1px solid rgba(54, 83, 107, .25);
+    @media (min-width: 700px) {
+        padding: 0;
+        margin-bottom: 64px;
+        text-align: left;
+        border: none;
+        flex-direction: row;
+        gap: 10px;
+    }
+    @media (min-width: 1280px) {
+        margin: 0 -95px 72px;
+    }
+}
+
+.about-info-block {
+    @media (min-width: 700px) {
+        width: 100%;
+        padding: 16px 0;
+        border-top: 1px solid rgba(54, 83, 107, .25);
+        border-bottom: 1px solid rgba(54, 83, 107, .25);
+    }
+}
+
+.about-info-text {
+    color: #36536B;
+    opacity: .7;
+}
+
+.about-info-number {
+    color: #BA4270;
+}
