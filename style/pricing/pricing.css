@@ -1,5 +1,19 @@
+.main-content {
+  padding: 0 24px;
+}
+@media (min-width: 700px) {
+  .main-content {
+    padding: 0 40px;
+  }
+}
+@media (min-width: 1280px) {
+  .main-content {
+    padding: 0 165px;
+  }
+}
+
 .pricing-container {
-  padding: 48px 24px 80px;
+  padding: 48px 0 80px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -7,14 +21,14 @@
 }
 @media (min-width: 700px) {
   .pricing-container {
-    padding: 69px 40px 100px;
+    padding: 69px 0 100px;
     flex-direction: row;
     gap: 10px;
   }
 }
 @media (min-width: 1280px) {
   .pricing-container {
-    padding: 72px 165px 96px;
+    padding: 72px 0 96px;
     gap: 30px;
   }
 }

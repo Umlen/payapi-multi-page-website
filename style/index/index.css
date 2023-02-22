@@ -70,9 +70,6 @@
   }
 }
 
-.start-section-header {
-  padding: 0;
-}
 @media (min-width: 1024px) {
   .start-section-header {
     text-align: left;

@@ -17,6 +17,16 @@ body {
   position: relative;
   overflow-x: hidden;
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex-grow: 1;
+}
+
+footer {
+  flex-shrink: 0;
 }
 
 .basic-decoration-circle {
@@ -60,7 +70,6 @@ body {
 }
 @media (min-width: 1280px) {
   .basic-major-header {
-    padding-left: 165px;
     text-align: left;
     font-size: 3.73em;
     line-height: 1em;
