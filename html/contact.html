@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../style/style.css">
     <link rel="stylesheet" href="../style/header/header.css">
     <link rel="stylesheet" href="../style/footer/footer.css">
+    <link rel="stylesheet" href="../style/contact/contact.css">
   </head>
 
   <body>
@@ -54,22 +55,39 @@
         <button class="basic-buttons basic-pink-btn">Schedule a Demo</button>
       </nav>
     </header>
-
-    Submit a help request and we’ll get in touch shortly.
-    
-    Name
-    Email Address
-    Company Name
-    Title
-    Message
-    Stay up-to-date with company announcements and updates to our API
-    Submit
-
-    Join the thousands of innovators already building with us
-
-    Ready to start? 
-    Enter email address 
-    Schedule a Demo
+    <img src="../assets/bg-pattern-circle.svg" alt="" class="basic-decoration-circle">
+    <main class="main-content">
+      <h1 class="basic-large-header basic-major-header contact-header">
+        Submit a help request and we’ll get in touch shortly.
+      </h1>
+      <div class="splitter">
+        <form class="contact-form" action="#">
+          <input type="text" class="contact-form-input" placeholder="Name" required>
+          <input type="email" class="contact-form-input" placeholder="Email Address" required>
+          <input type="text" class="contact-form-input" placeholder="Company Name" required>
+          <input type="text" class="contact-form-input" placeholder="Title" required>
+          <textarea class="contact-form-textarea" placeholder="Message"></textarea>
+          <input type="checkbox" id="is-subscribed" class="contact-form-checkbox" value="subscribed">
+          <label for="is-subscribed" class="contact-form-label">
+            Stay up-to-date with company announcements and updates to our API
+          </label>    
+          <button class="basic-buttons basic-dark-btn contact-form-btn">Submit</button>
+        </form>
+        <section class="partners-section">
+          <h2 class="basic-mid-header partners-section-header">
+            Join the thousands of innovators already building with us
+          </h2>
+          <div class="partners-logos-container">
+            <img src="/assets/clients/tesla.svg" class="partners-logo" alt="tesla logo">
+            <img src="/assets/clients/microsoft.svg" class="partners-logo" alt="microsoft logo">
+            <img src="/assets/clients/hewlett-packard.svg" class="partners-logo" alt="hp logo">
+            <img src="/assets/clients/oracle.svg" class="partners-logo" alt="oracle logo">
+            <img src="/assets/clients/google.svg" class="partners-logo" alt="google logo">
+            <img src="/assets/clients/nvidia.svg" class="partners-logo" alt="nvidia logo">
+          </div>
+        </section>
+      </div>
+    </main>
     <div class="basic-ready-to-start">
       <h2 class="basic-large-header ready-to-start-header">Ready to start?</h2>
       <form class="basic-schedule-demo-form" action="#">
@@ -121,5 +139,4 @@
       <img src="../assets/bg-pattern-circle.svg" alt="" class="footer-decoration-circle">
     </footer>
   </body>
-
 </html>
