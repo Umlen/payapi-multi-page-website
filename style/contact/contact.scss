@@ -52,6 +52,7 @@
 
 .contact-form-input,
 .contact-form-textarea {
+    width: 100%;
     background-color: transparent;
     border: 0;
     border-bottom: 1px solid rgba(54, 83, 107, .5);
@@ -64,6 +65,12 @@
     &:active,
     &:focus {
         outline: none;
+    }
+}
+
+.valid-form-field {
+    &:active,
+    &:focus {
         border-bottom: 1px solid rgba(54, 83, 107, 1);
     }
 }
@@ -71,6 +78,20 @@
 .contact-form-textarea {
     height: 90px;
     resize: none;
+}
+
+.invalid-field-message {
+    color: rgba(255, 0, 0, .5);
+    font-size: .7em;
+    margin-top: -16px;
+    padding-left: 20px;
+}
+
+.invalid-form-field {
+    border-color: rgba(255, 0, 0, .5);
+    &::placeholder {
+        color: rgba(255, 0, 0, 1);
+    }
 }
 
 .contact-form-label {
@@ -92,7 +113,7 @@
 .contact-form-checkbox {
     display: none;
     &:checked + .contact-form-label::before {
-        content: url(/assets/icons/icon-check.svg);
+        content: url(/assets/icons/icon-check-white.svg);
         background-color: #BA4270;
         display: flex;
         align-items: center;
